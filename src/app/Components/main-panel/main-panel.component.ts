@@ -93,28 +93,28 @@ export class MainPanelComponent implements OnInit {
     switch (condition.toLowerCase()) {
       
       case 'sunny':
-        return '../../../assets/Images/sunny.svg';
+        return 'assets/Images/sunny.svg';
 
       case 'cloudy':
-        return '../../../assets/Images/Windy-Cloud.svg';
+        return 'assets/Images/Windy-Cloud.svg';
 
       case 'partly cloudy':
-        return '../../../assets/Images/cloudysunny.svg';
+        return 'assets/Images/cloudysunny.svg';
 
       case 'rain':
-        return '../../../assets/Images/thunderstrom.svg';
+        return 'assets/Images/thunderstrom.svg';
 
       case 'rainy':
-        return '../../../assets/Images/thunderstrom.svg';
+        return 'assets/Images/thunderstrom.svg';
         
       case 'snow':
-        return '../../../assets/Images/heavysnow.svg';
+        return 'assets/Images/heavysnow.svg';
 
       case 'snowy':
-        return '../../../assets/Images/heavysnow.svg';
+        return 'assets/Images/heavysnow.svg';
 
       default:
-        return '../../../assets/Images/sunny.svg';
+        return 'assets/Images/sunny.svg';
     }
   }
   Remove(index:number){
