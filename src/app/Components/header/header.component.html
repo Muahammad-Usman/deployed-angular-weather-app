@@ -1,0 +1,25 @@
+<div class="pos-f-t">
+    <div [ngClass]="{'collapse': isCollapsed, 'navbar-collapse': true}" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white d-flex justify-content-center pb-3 h4">WEATHER MANIA</h5>
+
+        <!-- <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Double header</span>
+        </a> -->
+
+        <form  class="d-flex" (ngSubmit)="onSubmit()">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" [(ngModel)]="searchQuery" name="searchQuery" >
+            <button type="submit" hidden></button> <!-- Hidden submit button to capture Enter key press -->
+            <button type="submit" class="btn btn-primary" style="background-color: white; color: black;" (click)="AddCity()" >ADD</button>
+        </form>
+
+        <span class="text-muted">Toggleable via the navbar brand.</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler ms-5" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>

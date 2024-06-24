@@ -1,0 +1,54 @@
+.container-fluid{
+    height: 100%;
+    
+}
+body{
+    background: linear-gradient(to bottom, #43C6AC 0%, #F8FFAE 100%);   
+}
+
+#img1{
+    
+}
+
+#mainBaner{
+    background-color: rgba(255, 255, 255, 0.852);
+    height: 450px;
+}
+
+#con{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #43C6AC 0%, #F8FFAE 100%); 
+    
+}
+
+#rembtn{
+    
+    width: 150px;
+    height: 9%;
+    background-color: #74EBD5;
+    transition: transform .3s;
+    background-image: linear-gradient(90deg, #74ebd5b1 0%, #9face6a1 100%); border: transparent;
+    color: rgb(255, 255, 255); 
+    font-weight: 550;
+}
+
+
+#rembtn:hover{
+    transform: scale(1.17);
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%); border: transparent;
+    color: rgb(252, 82, 116);
+    font-weight: 550;
+}
+
+#celtofa{
+    transition: transform .2s;
+    color: #ffbb00;
+    
+}
+
+#celtofa:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgba(10, 10, 10, 0.655);
+}

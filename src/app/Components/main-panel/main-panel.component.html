@@ -1,0 +1,48 @@
+<div id="con">
+    <app-header (city)="too($event)"></app-header>
+
+<div class="container-fluid">
+    <div class="container-fluid gx-0">
+        <div class="row ">
+            <div  *ngFor="let Weather of Weather3 ; let index = index" class="col-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6 my-4" >
+                <div id="mainBaner" class="col-12 d-flex justify-content-center" style="border-radius: 19px;">
+                    <div class="text-white mt-4">
+                        <div class=" mb-3 d-flex justify-content-center">
+                            <img src="../../../assets/Images/thermometer-temperature-svgrepo-com.svg" alt="" class="ms-2  " style="height: 60px; width:60px;">
+                            <h4 id="celtofa" class="fw-bold  mt-3" (click)="toggleTemperatureUnit()">
+                                <span *ngIf="isCelsius">&nbsp;{{Weather.current.temp_c}} °C</span>
+                                <span *ngIf="!isCelsius">&nbsp;{{Weather.current.temp_f}} °F</span>
+                            </h4>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button id="rembtn" type="button" class="mb-3 btn" (click)="Remove(index)">Remove</button>
+                        </div>
+
+                        <div class="text-center">
+                            <h3 class=" fw-bold text-center text-dark"  style="overflow: auto;">{{Weather?.location?.name}}, {{Weather?.location?.region}}</h3>
+                            <h2 class="ms-5 text-center text-dark" > {{Weather?.location?.localtime}}</h2>
+                            <img [src]="getWeatherIcon(Weather.current.condition.text)" alt="" id="img1" class="" style="height: 200px; width:150px;">
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5 mb-5">
+                <div class="row">
+                    <div class="col">WEEK1</div>
+                    <div class="col">WEEK2</div>
+                    <div class="col">WEEK3</div>
+                    <div class="col">WEEK4</div>
+                    <div class="col">WEEK5</div>
+                    <div class="col">WEEK6</div>
+                    <div class="col">WEEK7</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
