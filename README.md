@@ -1,3 +1,10 @@
+
+<img width="1168" height="767" alt="image" src="https://github.com/user-attachments/assets/eb2046b3-8368-4c8b-a814-601a73e35094" />
+<img width="1475" height="742" alt="image" src="https://github.com/user-attachments/assets/0c7a4948-e68d-41e1-94c4-eea8442f5f27" />
+<img width="1485" height="747" alt="image" src="https://github.com/user-attachments/assets/84fdf139-0d3a-4451-a26e-4ea883d8c5c5" />
+
+
+
 # Weather
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
@@ -19,6 +26,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
+
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
